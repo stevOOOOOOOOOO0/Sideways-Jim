@@ -10,11 +10,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Scene/Floor/FloorReplacement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="60">
+              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <folding>
+                <marker date="1557847640231" expanded="false" signature="6:157" ph="..." />
+                <marker date="1557847640231" expanded="true" signature="204:388" ph="{...}" />
+                <marker date="1557847640231" expanded="true" signature="286:307" ph="{...}" />
+                <marker date="1557847640231" expanded="true" signature="365:386" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -22,8 +28,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Scene/Floor/FloorMovement.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="375">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <marker date="1557847640298" expanded="false" signature="6:78" ph="..." />
+                <marker date="1557847640298" expanded="true" signature="122:641" ph="{...}" />
+                <marker date="1557847640298" expanded="true" signature="282:353" ph="{...}" />
+                <marker date="1557847640298" expanded="true" signature="411:639" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+              <folding>
+                <marker date="1557848469168" expanded="false" signature="6:118" ph="..." />
+                <marker date="1557848469168" expanded="true" signature="163:1349" ph="{...}" />
+                <marker date="1557848469168" expanded="true" signature="470:491" ph="{...}" />
+                <marker date="1557848469168" expanded="true" signature="549:570" ph="{...}" />
+                <marker date="1557848469168" expanded="true" signature="621:739" ph="{...}" />
+                <marker date="1557848469168" expanded="true" signature="779:1036" ph="{...}" />
+                <marker date="1557848469168" expanded="true" signature="826:914" ph="{...}" />
+                <marker date="1557848469168" expanded="true" signature="943:1030" ph="{...}" />
+                <marker date="1557848469168" expanded="true" signature="1076:1347" ph="{...}" />
+                <marker date="1557848469168" expanded="true" signature="1120:1228" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,6 +67,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scene/Floor/FloorMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Scene/Floor/FloorReplacement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -44,6 +78,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Data/FloorData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/FloorData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Scene/Floor/FloorReplacement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Scene/Floor/FloorMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" />
       </list>
     </option>
   </component>
@@ -65,8 +101,8 @@
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer" />
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -118,11 +154,12 @@
       <updated>1557450674125</updated>
       <workItem from="1557450681729" duration="6743000" />
       <workItem from="1557767222606" duration="115000" />
+      <workItem from="1557847550256" duration="927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6858000" />
+    <option name="totallyTimeSpent" value="7785000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -136,7 +173,7 @@
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1874" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25248072" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25523704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -184,15 +221,46 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ScriptableObjects/FloorData.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Scene/Floor/FloorReplacement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="60">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding>
+            <marker date="1557847640231" expanded="false" signature="6:157" ph="..." />
+            <marker date="1557847640231" expanded="true" signature="204:388" ph="{...}" />
+            <marker date="1557847640231" expanded="true" signature="286:307" ph="{...}" />
+            <marker date="1557847640231" expanded="true" signature="365:386" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Scene/Floor/FloorMovement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="375">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <marker date="1557847640298" expanded="false" signature="6:78" ph="..." />
+            <marker date="1557847640298" expanded="true" signature="122:641" ph="{...}" />
+            <marker date="1557847640298" expanded="true" signature="282:353" ph="{...}" />
+            <marker date="1557847640298" expanded="true" signature="411:639" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="8" lean-forward="true" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <marker date="1557848469168" expanded="false" signature="6:118" ph="..." />
+            <marker date="1557848469168" expanded="true" signature="163:1349" ph="{...}" />
+            <marker date="1557848469168" expanded="true" signature="470:491" ph="{...}" />
+            <marker date="1557848469168" expanded="true" signature="549:570" ph="{...}" />
+            <marker date="1557848469168" expanded="true" signature="621:739" ph="{...}" />
+            <marker date="1557848469168" expanded="true" signature="779:1036" ph="{...}" />
+            <marker date="1557848469168" expanded="true" signature="826:914" ph="{...}" />
+            <marker date="1557848469168" expanded="true" signature="943:1030" ph="{...}" />
+            <marker date="1557848469168" expanded="true" signature="1076:1347" ph="{...}" />
+            <marker date="1557848469168" expanded="true" signature="1120:1228" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
