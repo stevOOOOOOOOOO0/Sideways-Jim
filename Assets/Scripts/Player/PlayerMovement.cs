@@ -23,7 +23,14 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Dash(Movement))
+            return;
+        else
+        {
+            ForwardBackward(Movement);
+            if (input.GetKeyDown("Jump"))
+                Jump(Movement);
+        }
     }
 
     public void ForwardBackward(Vector3 Movement)
