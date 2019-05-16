@@ -12,58 +12,62 @@ public class PlayerMovement : MonoBehaviour
     public float JumpSpeed;
     public bool SecondJump;
     public Vector3 DashMovement;
-    public float Timer;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float Timer = 1.0f;
+    public float Gravity;
+    public bool DashAble;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Dash(Movement))
-            return;
+        if (Dash())
+        {
+            PlayerController.Move(Movement);
+        }
         else
         {
-            ForwardBackward(Movement);
-            if (input.GetKeyDown("Jump"))
-                Jump(Movement);
+            ForwardBackward();
+            if (Input.GetKeyDown("space"))
+                Jump();
         }
+        PlayerController.Move(Movement);
     }
 
-    public void ForwardBackward(Vector3 Movement)
+    private void ForwardBackward()
     {
         Movement.x = Input.GetAxis("Horizontal") * Speed;
-        Movement.y += (-9.8f * Time.deltaTime);
+        Movement.y += (Gravity * Time.deltaTime);
+        if (PlayerController.isGrounded)
+            DashAble = true;
     }
 
-    public void Jump(Vector3 Movement)
+    private void Jump()
     {
         if (PlayerController.isGrounded)
         {
             SecondJump = false;
+            DashAble = true;
             Movement.y = JumpSpeed;
         }
-        else if (SecondJump)
+        else if (!SecondJump)
         {
+            DashAble = true;
             Movement.y = JumpSpeed;
             SecondJump = true;
         }
     }
 
-    public bool Dash(Vector3 Movement)
+    private bool Dash()
     {
-        if (Input.GetKeyDown("Dash"))
+        if (Input.GetKeyDown("left alt") && DashAble)
         {
             Movement = DashMovement;
             Timer = 0.0f;
+            DashAble = false;
             return true;
         }
 
         Timer += 1f * Time.deltaTime;
-        if (Timer <= 0.5f)
+        if (Timer <= 0.25f)
             return true;
         return false;
     }

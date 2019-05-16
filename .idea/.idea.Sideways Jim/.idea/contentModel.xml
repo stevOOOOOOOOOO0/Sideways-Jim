@@ -16,6 +16,10 @@
               <e p="FloorReplacement.cs" t="Include" />
             </e>
           </e>
+          <e p="ScriptableObjects" t="Include">
+            <e p="FloatData.cs" t="Include" />
+            <e p="ListData.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
