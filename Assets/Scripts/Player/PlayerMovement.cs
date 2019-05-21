@@ -7,13 +7,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public Vector3 Movement = Vector3.zero;
-    public float Speed;
+    private float speed = .25f;
     public CharacterController PlayerController;
-    public float JumpSpeed;
+    private float jumpSpeed = .5f;
     public bool SecondJump;
     public Vector3 DashMovement;
-    public float Timer = 1.0f;
-    public float Gravity;
+    private float timer = 1.0f;
+    private float Gravity = -2f;
     public bool DashAble;
 
     // Update is called once per frame
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void ForwardBackward()
     {
-        Movement.x = Input.GetAxis("Horizontal") * Speed;
+        Movement.x = Input.GetAxis("Horizontal") * speed;
         Movement.y += (Gravity * Time.deltaTime);
         if (PlayerController.isGrounded)
             DashAble = true;
@@ -46,12 +46,12 @@ public class PlayerMovement : MonoBehaviour
         {
             SecondJump = false;
             DashAble = true;
-            Movement.y = JumpSpeed;
+            Movement.y = jumpSpeed;
         }
         else if (!SecondJump)
         {
             DashAble = true;
-            Movement.y = JumpSpeed;
+            Movement.y = jumpSpeed;
             SecondJump = true;
         }
     }
@@ -61,13 +61,13 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown("left alt") && DashAble)
         {
             Movement = DashMovement;
-            Timer = 0.0f;
+            timer = 0.0f;
             DashAble = false;
             return true;
         }
 
-        Timer += 1f * Time.deltaTime;
-        if (Timer <= 0.25f)
+        timer += 1f * Time.deltaTime;
+        if (timer <= 0.25f)
             return true;
         return false;
     }

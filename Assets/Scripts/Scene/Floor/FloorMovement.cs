@@ -22,7 +22,7 @@ public class FloorMovement : MonoBehaviour
         endPosition.x -= FloorSpeed.Value;
         position = Vector3.Lerp(position, endPosition, 1 * Time.deltaTime);
         transform.position = position;
-        if (transform.position.x < -20f)
+        if (transform.position.x < -22f)
             Destroy(gameObject);
     }
 }

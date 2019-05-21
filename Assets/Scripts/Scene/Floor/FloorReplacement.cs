@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
@@ -18,17 +17,17 @@ public class FloorReplacement : MonoBehaviour
     public Vector3 Offset;
     public Transform StartingPosition;
     private GameObject lastUsed;
-    private float randFloor;
+    private int randFloor;
     
     // Start is called before the first frame update
     void Start()
     {
         FloorSpeed.Value = 5f;
         Floor.Value.Clear();
-        StartingPosition.position.Set(-18, 0, 0 );
+        StartingPosition.position.Set(-20, 0, 0 );
         StartingPosition.rotation.Set(0, 0, 0, 0);
         Floor.Value.Add(Instantiate(BasicFloor, StartingPosition));
-        for (int i = 0; i < 12; i++)
+        for (int i = 0; i < 14; i++)
         {
             Floor.Value.Add(Instantiate(BasicFloor, Floor.Value[Floor.Value.Count - 1].transform.position + Offset,
                 Floor.Value[Floor.Value.Count - 1].transform.rotation));
@@ -38,13 +37,14 @@ public class FloorReplacement : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (Floor.Value[0].transform.position.x < -18f)
+        if (Floor.Value[0].transform.position.x < -20)
         {
             Floor.Value.Add(Instantiate(ChooseGameObject(), Floor.Value[Floor.Value.Count - 1].transform.position + Offset,
                 Floor.Value[Floor.Value.Count - 1].transform.rotation));
             Floor.Value.RemoveAt(0); // removes first element in the list and shifts everything down
         }
-        FloorSpeed.Value += 1 * Time.deltaTime;
+        if (FloorSpeed.Value < 20)
+            FloorSpeed.Value += .5f * Time.deltaTime;
     }
 
     private  GameObject ChooseGameObject()
