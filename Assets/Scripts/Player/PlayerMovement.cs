@@ -27,7 +27,15 @@ public class PlayerMovement : MonoBehaviour
         {
             ForwardBackward();
             if (Input.GetKeyDown("space"))
+            {
                 Jump();
+                Gravity = Gravity / 2;
+            }
+
+            if (Input.GetKeyUp("space"))
+            {
+                Gravity = Gravity * 2;
+            }
         }
         PlayerController.Move(Movement);
     }
