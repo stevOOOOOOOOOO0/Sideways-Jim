@@ -9,11 +9,12 @@ using Random = System.Random;
 public class FloorReplacement : MonoBehaviour
 {
 
-    public FloatData FloorSpeed;
+    public FloatData ItemSpeed;
     public ListData Floor;
-    public GameObject BasicFloor;
-    public GameObject BlankFloor;
-    public GameObject SpikeFloor;
+    public GameObject Item1;
+    public GameObject Item2;
+    public GameObject Item3;
+    public GameObject Item4;
     public Vector3 Offset;
     public Transform StartingPosition;
     private GameObject lastUsed;
@@ -22,14 +23,12 @@ public class FloorReplacement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        FloorSpeed.Value = 5f;
+        ItemSpeed.Value = 5f;
         Floor.Value.Clear();
-        StartingPosition.position.Set(-20, 0, 0 );
-        StartingPosition.rotation.Set(0, 0, 0, 0);
-        Floor.Value.Add(Instantiate(BasicFloor, StartingPosition));
+        Floor.Value.Add(Instantiate(Item1, StartingPosition));
         for (int i = 0; i < 14; i++)
         {
-            Floor.Value.Add(Instantiate(BasicFloor, Floor.Value[Floor.Value.Count - 1].transform.position + Offset,
+            Floor.Value.Add(Instantiate(Item1, Floor.Value[Floor.Value.Count - 1].transform.position + Offset,
                 Floor.Value[Floor.Value.Count - 1].transform.rotation));
         }
     }
@@ -43,8 +42,8 @@ public class FloorReplacement : MonoBehaviour
                 Floor.Value[Floor.Value.Count - 1].transform.rotation));
             Floor.Value.RemoveAt(0); // removes first element in the list and shifts everything down
         }
-        if (FloorSpeed.Value < 20)
-            FloorSpeed.Value += .5f * Time.deltaTime;
+        if (ItemSpeed.Value < 20)
+            ItemSpeed.Value += .5f * Time.deltaTime;
     }
 
     private  GameObject ChooseGameObject()
@@ -53,16 +52,16 @@ public class FloorReplacement : MonoBehaviour
         switch (randFloor)
         {
             case 0:
-                lastUsed = BasicFloor;
+                lastUsed = Item1;
                 break;
             case 1:
-                lastUsed = BlankFloor;
+                lastUsed = Item2;
                 break;
             case 2:
-                lastUsed = SpikeFloor;
+                lastUsed = Item3;
                 break;
             case 3:
-                lastUsed = BasicFloor;
+                lastUsed = Item4;
                 break;
         }
         return lastUsed;
