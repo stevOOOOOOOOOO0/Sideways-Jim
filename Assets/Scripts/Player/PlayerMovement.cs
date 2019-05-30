@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 Movement = Vector3.zero;
     private float speed = .25f;
     public CharacterController PlayerController;
-    private float jumpSpeed = .5f;
+    private float jumpSpeed = .4f;
     public bool SecondJump;
     public Vector3 DashMovement;
     private float timer = 1.0f;
@@ -55,6 +55,7 @@ public class PlayerMovement : MonoBehaviour
             SecondJump = false;
             DashAble = true;
             Movement.y = jumpSpeed;
+            Gravity = -2f;
         }
         else if (!SecondJump)
         {
