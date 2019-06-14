@@ -109,3 +109,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FloorSpeed: {fileID: 11400000, guid: d84336c3b4ec9164d8f0c7ea0f07764b, type: 2}
+  DeactivatePostition: -22

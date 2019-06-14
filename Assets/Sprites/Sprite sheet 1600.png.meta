@@ -11,12 +11,12 @@ TextureImporter:
     21300012: Sprite sheet 1600_6
     21300014: Sprite sheet 1600_7
     21300016: Hand 7
-    21300018: Sprite sheet 1600_18
-    21300020: Sprite sheet 1600_19
-    21300022: Sprite sheet 1600_20
-    21300024: Sprite sheet 1600_21
-    21300026: Sprite sheet 1600_22
-    21300028: Sprite sheet 1600_23
+    21300018: Icicle 1 lower
+    21300020: Icicle 2 lower
+    21300022: Icicle 3 lower
+    21300024: Icicle 1 upper
+    21300026: Icicle 2 upper
+    21300028: Icicle 3 upper
     21300030: Sprite sheet 1600_9
     21300032: Hand 6
     21300034: Hand 5
@@ -24,9 +24,11 @@ TextureImporter:
     21300038: Hand 3
     21300040: Hand 2
     21300042: Hand 1
-    21300044: Wall Top
+    21300044: Wall Top Right
     21300046: Wall Bottom
     21300048: Floor
+    21300050: Sprite sheet 1600_8
+    21300052: Wall Top Left
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -289,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite sheet 1600_18
+      name: Icicle 1 lower
       rect:
         serializedVersion: 2
         x: 1024
@@ -309,7 +311,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite sheet 1600_19
+      name: Icicle 2 lower
       rect:
         serializedVersion: 2
         x: 1536
@@ -329,7 +331,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite sheet 1600_20
+      name: Icicle 3 lower
       rect:
         serializedVersion: 2
         x: 2048
@@ -349,7 +351,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite sheet 1600_21
+      name: Icicle 1 upper
       rect:
         serializedVersion: 2
         x: 2560
@@ -369,7 +371,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite sheet 1600_22
+      name: Icicle 2 upper
       rect:
         serializedVersion: 2
         x: 3072
@@ -389,7 +391,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Sprite sheet 1600_23
+      name: Icicle 3 upper
       rect:
         serializedVersion: 2
         x: 3584
@@ -549,15 +551,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wall Top
+      name: Wall Top Right
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2053
+        x: 2048
+        y: 1540
         width: 2048
-        height: 1018
+        height: 1528
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -573,11 +575,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1035
+        y: 1018
         width: 2048
         height: 1018
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -597,13 +599,33 @@ TextureImporter:
         width: 2048
         height: 1018
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 8a424c006321e8a47b9b1d33cebb08b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wall Top Left
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 2048
+        height: 1540
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb3f79e1dd3a474ca08313bd38b6b99
       vertices: []
       indices: 
       edges: []
