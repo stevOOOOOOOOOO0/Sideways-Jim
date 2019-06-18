@@ -24,6 +24,6 @@ public class FloorMovement : MonoBehaviour
         position = Vector3.Lerp(position, endPosition, 1 * Time.deltaTime);
         transform.position = position;
         if (transform.position.x < DeactivatePostition)
-            Destroy(gameObject);
+            gameObject.SetActive(false);
     }
 }

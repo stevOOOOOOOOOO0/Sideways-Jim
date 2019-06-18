@@ -6,6 +6,9 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Hand" t="Include">
+            <e p="HandBehavior.cs" t="Include" />
+          </e>
           <e p="Player" t="Include">
             <e p="PlayerMovement.cs" t="Include" />
           </e>
@@ -14,6 +17,7 @@
               <e p="FloorMovement.cs" t="Include" />
               <e p="FloorReplacement.cs" t="Include" />
             </e>
+            <e p="ObjectReplacement.cs" t="Include" />
           </e>
           <e p="ScriptableObjects" t="Include">
             <e p="FloatData.cs" t="Include" />

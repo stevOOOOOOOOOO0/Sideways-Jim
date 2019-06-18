@@ -5,13 +5,14 @@ using UnityEngine;
 public class HandBehavior : MonoBehaviour {
 
 	public Transform FollowThis;
-	public Transform Follower;
-	private Transform positionUpdater;
+	private Vector3 updatePosition;
+	public float Offset;
+	public float Smoothspeed;
 	
 	// Update is called once per frame
-	void Update () {
-		positionUpdater.position = FollowThis.position;
-		positionUpdater.position.Set(0, positionUpdater.position.y, 0);
-		Follower.position = positionUpdater.position;
+	void Update ()
+	{
+		updatePosition.Set(transform.position.x, FollowThis.position.y + Offset, 0);
+		transform.position = Vector3.Lerp(transform.position, updatePosition, Smoothspeed);
 	}
 }
