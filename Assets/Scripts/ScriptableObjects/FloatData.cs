@@ -9,10 +9,5 @@ public class FloatData : ScriptableObject
 {
     public float Value;
     public bool Timer;
-
-    void AddTime()
-    {
-        if (Timer == true)
-            Value += 1 * Time.deltaTime;
-    }
+    
 }

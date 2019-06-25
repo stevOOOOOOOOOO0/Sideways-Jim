@@ -24,6 +24,7 @@ public class ActionInitiation : MonoBehaviour
 		{
 			randNumber = Random.Range(0, (Objects.Value.Count - 1));		//Create New Hand choosing between four options
 			Objects.Value[randNumber].SetActive(true);
+			Time.Timer = false;
 		}
 	}
 }
