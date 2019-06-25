@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Michael Michie\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Michael Michie\.Rider2019.1\system\resharper-host\Local\Transient\ReSharperHost\v191\SolutionCaches\_Sideways Jim.-1021387233.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Michael Michie\Documents\School\Sideways Jim\Sideways Jim\Sideways Jim" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="Hand" t="Include">
+            <e p="ActionInitiation.cs" t="Include" />
+            <e p="HandBehavior.cs" t="Include" />
+          </e>
+          <e p="Player" t="Include">
+            <e p="PlayerMovement.cs" t="Include" />
+          </e>
+          <e p="Scene" t="Include">
+            <e p="Floor" t="Include">
+              <e p="FloorMovement.cs" t="Include" />
+              <e p="FloorReplacement.cs" t="Include" />
+            </e>
+            <e p="ObjectReplacement.cs" t="Include" />
+          </e>
+          <e p="ScriptableObjects" t="Include">
+            <e p="FloatData.cs" t="Include" />
+            <e p="ListData.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Sideways Jim.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

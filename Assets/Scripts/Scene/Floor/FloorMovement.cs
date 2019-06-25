@@ -7,22 +7,14 @@ public class FloorMovement : MonoBehaviour
 {
     public FloatData FloorSpeed;
     private Vector3 endPosition;
-    private Vector3 position;
     public float DeactivatePostition;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        position = transform.position;
-    }
 
     // Update is called once per frame
     void Update()
     {
-        endPosition = position;
+        endPosition = transform.position;
         endPosition.x -= FloorSpeed.Value;
-        position = Vector3.Lerp(position, endPosition, 1 * Time.deltaTime);
-        transform.position = position;
+        transform.position = Vector3.Lerp(transform.position, endPosition, 1 * Time.deltaTime);
         if (transform.position.x < DeactivatePostition)
             gameObject.SetActive(false);
     }

@@ -11,6 +11,7 @@ public class ObjectReplacement : MonoBehaviour {
 	public float DistanceBetween;
 	public float ChanceToActivate;
 	private float OGChanceToActivate;
+	private float percent;
 	public int i = 0;
 	public GameObject Populator;
 	public Vector3 StorageLocation;
@@ -36,9 +37,9 @@ public class ObjectReplacement : MonoBehaviour {
 	{
 		if ((StartingPosition.position.x - ObjectList.Value[i].transform.position.x) > DistanceBetween)
 		{
-			if (Random.Range(0, 100) < ChanceToActivate) 					//runs the chances that a new creature is placed
+			percent = Random.Range(0, 100);
+			if (percent < ChanceToActivate) 					//runs the chances that a new creature is placed
 			{
-				Debug.Log("in the Activation Script");
 				i++; 														// i is changed to the next deactivated piece
 				if (i >= ObjectList.Value.Count)							// if i is out of scope it switches back to zero
 					i = 0;
@@ -46,9 +47,9 @@ public class ObjectReplacement : MonoBehaviour {
 				ObjectList.Value[i].transform.SetPositionAndRotation(StartingPosition.position, StartingPosition.rotation); //create Creature
 				ChanceToActivate = OGChanceToActivate;
 			}
-			else 															//falled the roll increase chances
+			else 															//failed the roll increase chances
 			{
-				ChanceToActivate += 20 * Time.deltaTime;
+				ChanceToActivate += 5 * Time.deltaTime;
 			}
 		}
 		if (ItemSpeed.Value < 20)
