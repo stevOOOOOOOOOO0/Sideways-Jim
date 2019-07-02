@@ -10,6 +10,8 @@
           <e p="Hand" t="Include">
             <e p="ActionInitiation.cs" t="Include" />
             <e p="HandBehavior.cs" t="Include" />
+            <e p="HandMovement.cs" t="Include" />
+            <e p="WarningInitiation.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="PlayerMovement.cs" t="Include" />

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b813f25d34e872541aaf8028e3adb4f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Time: {fileID: 11400000, guid: d8a799c6c76717a479f2076713d27db4, type: 2}
+  TimeValue: {fileID: 11400000, guid: d8a799c6c76717a479f2076713d27db4, type: 2}
   Objects: {fileID: 11400000, guid: 40c8f82ee2097634897ffb07338a86f7, type: 2}
 --- !u!4 &268189534
 Transform:
@@ -347,7 +347,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 268189532}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.069611, y: 2.7941685, z: -12.330412}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
