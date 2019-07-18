@@ -11,7 +11,6 @@ public class ActionInitiation : MonoBehaviour
 	public ListData Objects;
 	public List<GameObject> newObjects;
 
-
 	private IEnumerator Start ()
 	{
 		TimeValue.Value = -7;
@@ -33,9 +32,7 @@ public class ActionInitiation : MonoBehaviour
 			newObjects[i].SetActive(true);
 			TimeValue.Timer = false;
 			yield return new WaitForSeconds(6);
-			//Reset();
 		}
-	
 	}
 
 	private void Reset()

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: Hands
   m_EditorClassIdentifier: 
   Value:
-  - {fileID: 1353472958840920, guid: e632c06fb5a3bf14099b794680334054, type: 2}
+  - {fileID: 1766138897777980, guid: 568737e5d0462e2428b9cf088824967c, type: 2}
   - {fileID: 1302033967146288, guid: c7a3d1e7b4c8669499e1f262ad1b3e25, type: 2}
   - {fileID: 1557884885302482, guid: c3c0baecadddb254f8a7562b1c91cdd8, type: 2}
   - {fileID: 1917831824184472, guid: 7b893409604682e4c9dad7796c00e8f7, type: 2}
