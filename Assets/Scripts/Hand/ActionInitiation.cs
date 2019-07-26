@@ -15,12 +15,12 @@ public class ActionInitiation : MonoBehaviour
 	{
 		TimeValue.Value = -7;
 		TimeValue.Timer = true;
-		Reset();
 
 		foreach (var obj in Objects.Value)
 		{
 			var newObj = Instantiate(obj);
 			newObjects.Add(newObj as GameObject);
+			obj.SetActive(false);
 		}
 		
 		yield return new WaitForSeconds(10);
