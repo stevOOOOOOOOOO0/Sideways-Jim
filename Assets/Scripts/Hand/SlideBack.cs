@@ -26,7 +26,7 @@ public class SlideBack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		updatePosition.Set(originalPosition.x + offsetUsed, originalPosition.y, 0);
+		updatePosition.Set(originalPosition.x + offsetUsed, originalPosition.y, originalPosition.z);
 		transform.position = Vector3.Lerp(transform.position, updatePosition, .05f);
 	}
 }
