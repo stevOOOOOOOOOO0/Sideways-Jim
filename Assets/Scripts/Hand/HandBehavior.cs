@@ -12,7 +12,7 @@ public class HandBehavior : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		updatePosition.Set(transform.position.x, FollowThis.position.y + Offset, 0);
+		updatePosition.Set(transform.position.x, FollowThis.position.y + Offset, 2.9f);
 		transform.position = Vector3.Lerp(transform.position, updatePosition, Smoothspeed);
 	}
 }

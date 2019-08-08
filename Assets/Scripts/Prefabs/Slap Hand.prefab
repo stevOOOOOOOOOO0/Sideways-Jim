@@ -35,11 +35,12 @@ GameObject:
   m_Component:
   - component: {fileID: 4653651355125686}
   - component: {fileID: 114561339208682026}
+  - component: {fileID: 65384678954766446}
   - component: {fileID: 212218519073180992}
   - component: {fileID: 95578883771428672}
   m_Layer: 0
   m_Name: Hand (1)
-  m_TagString: Untagged
+  m_TagString: Hand
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +167,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1926020247829402}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4653651355125686}
@@ -190,6 +191,18 @@ Transform:
   m_Father: {fileID: 4678431349858048}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65384678954766446
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1260104590976628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 18.5, y: 2.5, z: 1}
+  m_Center: {x: -0.37674809, y: -6.182705, z: 0}
 --- !u!95 &95578883771428672
 Animator:
   serializedVersion: 3

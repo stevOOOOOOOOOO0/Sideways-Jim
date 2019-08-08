@@ -14,7 +14,7 @@ public class WarningInitiation : MonoBehaviour
 	// Use this for initialization
 	void OnEnable ()
 	{
-		transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), 0);
+		transform.position = new Vector3(Random.Range(XMin, XMax), Random.Range(YMin, YMax), 2.9f);
 		Debug.Log("position: " + transform.position);
 		StartCoroutine(OnEnableCoroutine());
 	}
